@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h3>I'm in the AppComponent!</h3>
+      <hr> 
+      <input type="text" [(ngModel)]="username">
+      <hr>
+      {{username}}
+      <hr>
+      <button [disabled]="! isAvailable()" class="btn btn-primary" >click me</button>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,9 @@
+<app-header (navigationPage)="navigationPage($event)"></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <app-recipes *ngIf="recipesShow"></app-recipes>
+      <app-shopping-list *ngIf="! recipesShow" ></app-shopping-list>
+    </div>
+  </div>
+</div>
